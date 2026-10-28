@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سفیر بلبرینگ | تهیه و توزیع قطعات صنعتی</title>
+<meta name="description" content="تهیه و توزیع بلبرینگ، تسمه، زنجیر، دنده، یاتاقان، فولی، رولیک، پلی‌اتیلن، پلی‌آمید و شیلنگ‌های فشارقوی">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="top" id="top">
+  <div class="wrap bar">
+    <a class="logo" href="#"><span class="mark"></span>سفیر بلبرینگ</a>
+    <nav class="nav">
+      <a href="#products">محصولات</a>
+      <a href="#why">چرا سفیر</a>
+      <a href="#contact">تماس</a>
+    </nav>
+    <button class="cart-btn" id="openCart" aria-label="سبد خرید">
+      سبد خرید <b id="cartCount">۰</b>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag">تأمین‌کنندهٔ قطعات صنعتی و پلیمری</span>
+      <h1>هر چرخی که می‌چرخد،<br>روی قطعهٔ درست می‌چرخد.</h1>
+      <p>بلبرینگ، تسمه، زنجیر، دنده، یاتاقان، فولی، رولیک، پلی‌اتیلن، پلی‌آمید و شیلنگ فشارقوی؛ با موجودی واقعی و ارسال سریع به کارخانه و کارگاه شما.</p>
+      <div class="cta">
+        <a class="btn primary" href="#products">مشاهدهٔ محصولات</a>
+        <a class="btn" href="#contact">درخواست استعلام قیمت</a>
+      </div>
+      <div class="stats">
+        <div><b data-count="5000" data-pre="+">+۵۰۰۰</b><span>قلم کالا در انبار</span></div>
+        <div><b data-count="15" data-pre="+">+۱۵</b><span>سال سابقه</span></div>
+        <div><b>۲۴ ساعته</b><span>پاسخ به استعلام</span></div>
+      </div>
+    </div>
+    <div class="bearing" aria-hidden="true">
+      <svg viewBox="0 0 400 400" fill="none" stroke="#c5cbd3" stroke-width="1.2">
+        <path d="M200 8v384M8 200h384" stroke="#6b7785" stroke-dasharray="14 4 2 4" stroke-width=".8"/>
+        <circle cx="200" cy="200" r="184"/><circle cx="200" cy="200" r="176" stroke="#6b7785"/>
+        <circle cx="200" cy="200" r="132"/>
+        <g class="spin"><circle cx="200" cy="200" r="154" stroke="#6b7785" stroke-dasharray="3 5"/>
+          <g stroke="#e9ecef"><circle cx="200" cy="200" r="17" transform="translate(0 -154)"/><circle cx="200" cy="200" r="17" transform="translate(109 -109)"/><circle cx="200" cy="200" r="17" transform="translate(154 0)"/><circle cx="200" cy="200" r="17" transform="translate(109 109)"/><circle cx="200" cy="200" r="17" transform="translate(0 154)"/><circle cx="200" cy="200" r="17" transform="translate(-109 109)"/><circle cx="200" cy="200" r="17" transform="translate(-154 0)"/><circle cx="200" cy="200" r="17" transform="translate(-109 -109)"/></g></g>
+        <circle cx="200" cy="200" r="104"/><circle cx="200" cy="200" r="70"/>
+        <g class="spin2"><circle cx="200" cy="200" r="86" stroke="#6b7785" stroke-dasharray="2 6"/></g>
+        <circle cx="200" cy="200" r="6" fill="#C0262D" stroke="none"/>
+        <path d="M16 372h368M16 366v12M384 366v12" stroke="#8A97A6" stroke-width=".8"/>
+        <text x="200" y="392" text-anchor="middle">Ø 368 mm</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="brands" aria-hidden="true"><div class="track">
+  <span>SKF</span><span>FAG</span><span>NSK</span><span>NTN</span><span>TIMKEN</span><span>GATES</span><span>TSUBAKI</span><span>MANULI</span>
+  <span>SKF</span><span>FAG</span><span>NSK</span><span>NTN</span><span>TIMKEN</span><span>GATES</span><span>TSUBAKI</span><span>MANULI</span>
+</div></div>
+
+<section class="wrap cats" aria-label="دسته‌بندی">
+  <div class="chips" id="chips"></div>
+</section>
+
+<main class="wrap" id="products">
+  <div class="tools">
+    <input id="search" type="search" placeholder="جستجوی نام، مدل یا برند؛ مثلاً 6205 یا SKF">
+    <select id="sort" aria-label="مرتب‌سازی">
+      <option value="def">مرتب‌سازی پیش‌فرض</option>
+      <option value="asc">ارزان‌ترین</option>
+      <option value="desc">گران‌ترین</option>
+    </select>
+  </div>
+  <p class="found" id="found"></p>
+  <div class="grid" id="grid"></div>
+</main>
+
+<section class="why-band" id="why"><div class="wrap">
+  <h2 class="rv">چرا سفیر بلبرینگ</h2>
+  <p class="sub rv">چهار دلیلی که مشتریان صنعتی ما را انتخاب می‌کنند</p>
+  <div class="why-grid">
+    <div class="rv"><h3>اصل بودن قطعه</h3><p>کد فنی و برند هر محصول روی فاکتور نوشته می‌شود تا هنگام تعویض یا گارانتی مرجع داشته باشید.</p></div>
+    <div class="rv"><h3>مشاورهٔ انتخاب</h3><p>ابعاد، بار و دور کاری دستگاه را بگویید؛ قطعهٔ مناسب را پیشنهاد می‌دهیم.</p></div>
+    <div class="rv"><h3>ارسال همان روز</h3><p>سفارش‌های ثبت‌شده تا ظهر، همان روز به باربری تحویل داده می‌شوند.</p></div>
+    <div class="rv"><h3>خرید سازمانی</h3><p>پیش‌فاکتور رسمی و شرایط ویژه برای کارخانه‌ها و پیمانکاران.</p></div>
+  </div>
+</div></section>
+
+<footer id="contact">
+  <div class="wrap foot">
+    <div>
+      <b class="logo"><span class="mark"></span>سفیر بلبرینگ</b>
+      <p>تهیه و توزیع قطعات صنعتی و پلیمری</p>
+    </div>
+    <div>
+      <p>تلفن: ۰۲۱-۰۰۰۰۰۰۰۰</p>
+      <p>موبایل: ۰۹۱۲-۰۰۰۰۰۰۰</p>
+      <p>پشتیبانی ایتا: <a id="fEitaa" href="#" target="_blank" rel="noopener" dir="ltr"></a></p>
+      <p>پشتیبانی تلگرام: <a id="fTg" href="#" target="_blank" rel="noopener" dir="ltr"></a></p>
+      <p>نشانی: (آدرس فروشگاه را اینجا بنویسید)</p>
+    </div>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="سبد خرید">
+  <div class="drawer-head"><h2>سبد خرید <small id="headCount"></small></h2><button id="closeCart" aria-label="بستن">✕</button></div>
+  <div class="items" id="items"></div>
+  <div class="drawer-foot" id="cartFoot">
+    <details class="cust">
+      <summary>اطلاعات تماس و توضیحات سفارش</summary>
+      <input id="cName" type="text" placeholder="نام و نام خانوادگی / نام شرکت" autocomplete="name">
+      <input id="cPhone" type="tel" placeholder="شمارهٔ تماس (الزامی)" autocomplete="tel" dir="ltr">
+      <textarea id="cNote" rows="2" placeholder="توضیحات: برند دلخواه، نیاز به استعلام، آدرس ارسال..."></textarea>
+    </details>
+    <div class="sum"><span>تعداد اقلام</span><b id="sumCount">۰</b></div>
+    <div class="sum total"><span>جمع کل</span><b id="total">۰ تومان</b></div>
+    <p class="note">هزینهٔ ارسال و مالیات پس از تأیید سفارش توسط کارشناس اعلام می‌شود.</p>
+    <button class="btn primary full" id="sendEitaa">ثبت سفارش در ایتا</button>
+    <div class="two">
+      <button class="btn" id="sendTg">ارسال در تلگرام</button>
+      <button class="btn" id="copyOrder">کپی متن سفارش</button>
+    </div>
+    <button class="link" id="clear">خالی کردن سبد</button>
+  </div>
+</aside>
+<div class="modal" id="modal" role="dialog" aria-modal="true"><button id="closeModal" aria-label="بستن">✕</button><div id="modalBody"></div></div>
+<button class="totop" id="totop" aria-label="بازگشت به بالا">↑</button>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
